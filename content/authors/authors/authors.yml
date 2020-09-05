@@ -1,0 +1,7 @@
+- name: Alex Mor
+  bio: |
+    Cybersecurity by example.
+  avatar: ./avatars/alex-mor.png
+  featured: true
+  social:
+    - url: https://github.com/nashcontrol

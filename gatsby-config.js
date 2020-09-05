@@ -1,33 +1,25 @@
 module.exports = {
   siteMetadata: {
-    title: `Novela by Narative`,
-    name: `Narative`,
-    siteUrl: `https://novela.narative.co`,
-    description: `This is my description that will be used in the meta tags and important for search results`,
+    title: `Building security and automations`,
+    name: `BuildSecurity.dev`,
+    siteUrl: `https://buildsecurity.dev`,
+    description: `Building security and automations.`,
     hero: {
-      heading: `Welcome to Novela, the simplest way to start publishing with Gatsby.`,
+      heading: `BuildSecurity.dev`,
       maxWidth: 652,
     },
     social: [
       {
         name: `twitter`,
-        url: `https://twitter.com/narative`,
+        url: `https://twitter.com/nashcontrol`,
       },
       {
         name: `github`,
-        url: `https://github.com/narative`,
-      },
-      {
-        name: `instagram`,
-        url: `https://instagram.com/narative.co`,
+        url: `https://github.com/nashcontrol`,
       },
       {
         name: `linkedin`,
-        url: `https://www.linkedin.com/company/narative/`,
-      },
-      {
-        name: `dribbble`,
-        url: `https://dribbble.com/narativestudio`,
+        url: `https://www.linkedin.com/in/alex-mor/`,
       },
     ],
   },
@@ -48,13 +40,12 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Novela by Narative`,
-        short_name: `Novela`,
+        name: `BuildSecurity.dev`,
+        short_name: `BuildSecurity.dev`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#fff`,
         display: `standalone`,
-        icon: `src/assets/favicon.png`,
       },
     },
     {
@@ -62,5 +53,18 @@ module.exports = {
       options: {
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        // Defers execution of google analytics script after page load
+        defer: true,
+        // Any additional optional fields
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "buildsecurity.dev",
+      },
+    },
+      `gatsby-plugin-netlify-cms`
   ],
 };

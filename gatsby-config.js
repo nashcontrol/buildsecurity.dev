@@ -56,7 +56,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        trackingId: "UA-177229502-1",
         // Defers execution of google analytics script after page load
         defer: true,
         // Any additional optional fields

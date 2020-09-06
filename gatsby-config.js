@@ -5,7 +5,7 @@ module.exports = {
     siteUrl: `https://buildsecurity.dev`,
     description: `Blog on building application security and pipeline automations to impemenet zero trust and promote security by design ideas`,
     hero: {
-      heading: `BuildSecurity.dev`,
+      heading: `Building security by design`,
       maxWidth: 652,
     },
     social: [

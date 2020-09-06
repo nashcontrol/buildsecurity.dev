@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Building security and automations`,
+    title: `BuildSecurity.dev - Building security by design`,
     name: `BuildSecurity.dev`,
     siteUrl: `https://buildsecurity.dev`,
-    description: `Building security and automations.`,
+    description: `Blog on building application security and pipeline automations to impemenet zero trust and promote security by design ideas`,
     hero: {
       heading: `BuildSecurity.dev`,
       maxWidth: 652,

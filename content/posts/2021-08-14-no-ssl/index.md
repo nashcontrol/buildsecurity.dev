@@ -54,5 +54,11 @@ if err == nil {
 
 Building upon the speed and simplicity of [httprobe](https://github.com/tomnomnom/httprobe) to identify live hosts supporting HTTPS communication, [no-ssl](https://github.com/nashcontrol/no-ssl) attempts to establish a TLS handshake, specifying TLS v1.0 as the maximum TLS version that is acceptable. If this fails, it then attempts to specify TLS v1.1 as the maximum supported version. Results are sent to `stdout`.
 
+```shell
+cat domains.txt | httprobe -s -p https:443 | no-ssl
+Server https://example.com:443 supports TLS 1.0
+Server https://example.net:443 supports TLS 1.1
+```
+
 ---
 Image by <a href="https://pixabay.com/users/thomaswolter-92511/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=655353">Thomas Wolter</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=655353">Pixabay</a>

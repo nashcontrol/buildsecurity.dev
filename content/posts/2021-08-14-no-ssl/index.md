@@ -13,7 +13,7 @@ excerpt: Fast TLS v1.0 and TLS v1.1 scanner
 
 I tend to think that every (cybersecurity aware) company has a long term commitment to reduce its "external" attack surface, something similar to a 5 year plan that you keep on doing and updting every year, as we keep modernizing our technology stack and removing legacy applications.
 
-As part of that initiative, the team created a pipeline dedicated to attack surface reduction where we contiuously scan our infrastrcure, leveraging open source vulnerability scanning tools, to look for low hanging fruits and quick wins.
+As part of that initiative, we subscribed to a weekly feed of our entire DNS zone, across all our registered domains and designed a security pipeline dedicated to attack surface reduction, where we contiuously scan our infrastrcure, leveraging open source vulnerability scanning tools, to look for low hanging fruits and quick wins.
 
 Removing support for legacy protocols not only improves our security posture in the long term, but also enables us to identify legacy applications that need to be modernized with priority, as part of the digital transformation and cloud first approach.
 
@@ -24,7 +24,7 @@ We challanged ourselves to build a lightweight TLS/SSL scanner, capable of detec
 I started by researching which tools are available today that can be quickly introduced as another step in the scanning pipeline. I stumbled upon the collection of [dynamic security related helpers](https://github.com/vwt-digital/sec-helpers) by the Digital Ambition team of VolkerWessels Telecom, specifically the [nossl validation test](https://github.com/vwt-digital/sec-helpers/blob/develop/sec_helpers/no_ssl/__init__.py).
 I quickly came to realize that if I wanted to detect servers supporting SSLv3, I need to have my OpenSSL version with SSLv3 enabled, which means I may need to build my own OpenSSL binary on the fly (as a pipeline step) or packed in a container, and then run the TLS/SSL scanner inside the container.
 
-I was passionate about soloving this problem and presenting a simple and elegent solution, one where I could even practice writing some GO code (wanted to do that for a while), while deliving a tool that is easily installed, lightly designed and delivers fast results.
+I was passionate about solving this problem and presenting a simple and elegent solution, one where I could even practice writing some GO code (wanted to do that for a while), while deliving a tool that is easily installed, lightly designed and delivers fast results.
 
 **I cheated.**
 

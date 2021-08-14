@@ -28,7 +28,7 @@ I was passionate about soloving this problem and presenting a simple and elegent
 
 **I cheated.**
 
-Doing some digging into GO's support for openssl and TLS, stumbled upon the [tls](https://pkg.go.dev/crypto/tls) package and found that it allows one to configure a MaxVersion property. This enabled me to define the maximum TLS version that is acceptable by the client (or server). I was able to build a TLS v1.0 and TLS v1.1 scanner overnight, skipping the feature for highlighting servers supporting SSL v3. This is under the assumption that there is less than %1 of servers that supports both TLS v1.2 and SSLv3. Will tackle those later.
+Doing some digging into GO's support for openssl and TLS, stumbled upon the [tls](https://pkg.go.dev/crypto/tls) package and found that it allows one to configure a MaxVersion property. This enabled me to define the maximum TLS version that is acceptable by the client (or server). I was able to build a TLS v1.0 and TLS v1.1 scanner overnight, skipping the feature for highlighting servers supporting SSL v3. This is under the assumption that there are less than %1 of servers that support both TLS v1.2 and SSLv3. Will tackle those later.
 
 ```go
 url := "example.com:443"
